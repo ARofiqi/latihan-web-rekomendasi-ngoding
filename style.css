@@ -1,0 +1,215 @@
+*, body, head{
+    padding: 0;
+    margin: 0;
+    font-family: poppin;
+}
+
+@font-face {
+    font-family: poppin;
+    src: url("assets/Poppins-Regular.ttf");
+}
+
+body{
+    background-image: url("assets/img/background.png");
+}
+
+
+.container{
+    padding-left: 100px;   
+    padding-right: 100px;   
+}
+
+.head h1{
+    text-align: center;
+    padding: 50px;
+    color: rgb(3, 3, 3);
+}
+
+.head{
+    border-bottom: 5px solid black;
+}
+
+.head nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.head nav ul li{
+    list-style: none;
+}
+
+.head nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.head nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.list-card{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.card{
+    background-color: #0066ff;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card:hover .screen-text{
+    display: flex;
+}
+
+.screen-img img{
+    width: 300px;
+}
+
+.screen-text{
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(175, 175, 175, .5);
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.screen-text h2{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px; */
+}
+
+.screen-text div a{
+    background-color: #00ff40;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.screen-text div a:hover{
+    background-color: black;
+    color: #00ff40;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    border-top: 5px black solid;
+    padding-top: 80px;
+}
+
+footer .contact ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .contact ul li{
+    list-style: none;
+}
+
+footer .contact ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+footer .contact ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.contact h4{
+    color: rgb(78, 78, 78);
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .head nav ul li a{
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+
+    .head nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .card{
+        width: 250px;
+        height: 350px;
+    }
+
+    .screen-img img{
+        width: 200px;
+    }
+
+    .screen-text{
+        width: 250px;
+        height: 350px;
+    }
+
+    .list-card{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    footer .contact ul{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    footer .contact ul li a{
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+}
