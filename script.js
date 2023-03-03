@@ -1,4 +1,4 @@
-// let list_card = document.querySelectorAll(".list-card");
+9// let list_card = document.querySelectorAll(".list-card");
 const card = document.querySelectorAll(".card");
 
 const DATA = {
@@ -20,7 +20,7 @@ const DATA = {
   },
   4:{
     judul:"Solo Learn",
-    link:"https://www.sololearn.com/profile/27330448",
+    link:"https://www.sololearn.com",
   },
   5:{
     judul:"Petani Code",
